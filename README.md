@@ -1,16 +1,48 @@
-# React + Vite
+# Personal Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A cyberpunk-themed, interactive personal portfolio built with React, Vite, and Tailwind CSS. Features dynamic GitHub repository fetching, a fully functional audio player, scroll glitch effects, and a highly immersive Tokyo Night aesthetic.
 
-Currently, two official plugins are available:
+## 🚀 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+**View the live portfolio here:** [https://portfolio-thirthesh19s-projects.vercel.app](https://portfolio-thirthesh19s-projects.vercel.app) *(Assuming default Vercel deployment link, update if custom domain is configured)*
 
-## React Compiler
+## ✨ Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Tokyo Night / Cyberpunk Aesthetic:** Deep immersive dark theme with neon accents, custom scanline overlays, and glassmorphism.
+- **Dynamic Projects:** Automatically fetches the top 6 most recently updated repositories from GitHub using the GitHub API.
+- **Interactive Modals:** Detailed holographic terminal windows for viewing project details.
+- **Micro-interactions:** Custom glitch effects on scroll and hover, animated typing text, and a custom cursor.
+- **Audio Context:** Integrated background ambience toggleable via the navigation bar for enhanced immersion.
+- **Fully Responsive:** Optimized for all screen sizes from mobile devices to ultrawide monitors.
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Framework:** React 18
+- **Build Tool:** Vite
+- **Styling:** Tailwind CSS v4
+- **Animations:** Framer Motion, React Tilt
+- **Icons:** Lucide React, React Icons
+- **Data Fetching:** Axios
+
+## 📦 Local Development
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Thirthesh19/portfolio.git
+   ```
+2. Navigate into the directory:
+   ```bash
+   cd portfolio
+   ```
+3. Install dependencies:
+   ```bash
+   npm install --legacy-peer-deps
+   ```
+4. Start the development server:
+   ```bash
+   npm run dev
+   ```
+
+## 📄 License
+
+This project is open-source and available under the MIT License.
