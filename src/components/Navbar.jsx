@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-scroll';
-import { Menu, X, Moon, Sun, Volume2, VolumeX } from 'lucide-react';
-import { useTheme } from '../context/ThemeContext';
+import { Menu, X, Volume2, VolumeX } from 'lucide-react';
 import { useAudio } from '../context/AudioContext';
 import { motion, AnimatePresence } from 'framer-motion';
 
@@ -17,7 +16,6 @@ const navLinks = [
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-  const { isDarkMode, toggleTheme } = useTheme();
   const { isMuted, toggleMute, playHover, playClick } = useAudio();
 
   useEffect(() => {
@@ -72,14 +70,6 @@ const Navbar = () => {
             >
               {isMuted ? <VolumeX size={20} /> : <Volume2 size={20} />}
             </button>
-            <button 
-              onClick={() => { playClick(); toggleTheme(); }} 
-              className="p-2 rounded-full bg-slate-200 dark:bg-[#24283b] text-slate-700 dark:text-[#c0caf5] hover:bg-slate-300 dark:hover:bg-[#414868] hover:text-[#e0af68] hover:drop-shadow-[0_0_8px_rgba(224,175,104,0.8)] transition-all duration-300"
-              aria-label="Toggle Theme"
-              onMouseEnter={playHover}
-            >
-              {isDarkMode ? <Sun size={20} /> : <Moon size={20} />}
-            </button>
           </div>
         </div>
 
@@ -87,9 +77,6 @@ const Navbar = () => {
         <div className="md:hidden flex items-center space-x-4">
           <button onClick={() => { playClick(); toggleMute(); }} className="text-slate-700 dark:text-[#c0caf5]">
             {isMuted ? <VolumeX size={24} /> : <Volume2 size={24} />}
-          </button>
-          <button onClick={() => { playClick(); toggleTheme(); }} className="text-slate-700 dark:text-[#c0caf5]">
-            {isDarkMode ? <Sun size={24} /> : <Moon size={24} />}
           </button>
           <button onClick={() => { playClick(); setIsOpen(!isOpen); }} className="text-slate-700 dark:text-[#c0caf5]">
             {isOpen ? <X size={28} /> : <Menu size={28} />}
