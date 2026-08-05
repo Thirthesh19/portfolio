@@ -38,7 +38,7 @@ const Skills = () => {
   ];
 
   const stats = [
-    { label: 'Projects Completed', value: 5, suffix: '' },
+    { label: 'Projects Completed', value: 7, suffix: '+' },
     { label: 'Certifications', value: 4, suffix: '' },
     { label: 'Hackathons & Events', value: 6, suffix: '+' },
     { label: 'Years Learning', value: 3, suffix: '+' },
