@@ -13,7 +13,7 @@ const Hero = () => {
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
       <div 
-        className="absolute inset-0 bg-[url('/cyberpunk-bg.png')] bg-cover bg-center bg-fixed opacity-40 mix-blend-screen z-0" 
+        className="absolute inset-0 bg-[url('/cyberpunk-bg.png')] bg-cover bg-center md:bg-fixed opacity-40 mix-blend-screen z-0" 
         style={{ filter: 'brightness(0.7) contrast(1.2)' }}
       ></div>
       <div className="absolute inset-0 bg-gradient-to-b from-[#1a1b26]/80 via-transparent to-[#1a1b26] z-0 pointer-events-none"></div>
