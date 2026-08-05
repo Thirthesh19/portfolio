@@ -135,7 +135,7 @@ const Projects = () => {
   );
 
   return (
-    <section id="projects" className="section-padding bg-[#1a1b26] relative z-10 border-t border-[#414868]/30">
+    <section id="projects" className="section-padding bg-[#1a1b26] relative border-t border-[#414868]/30">
       {/* Background Cyberpunk Grid */}
       <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCI+PHBhdGggZD0iTTAgMGg0MHY0MEgweiIgZmlsbD0ibm9uZSIvPjxwYXRoIGQ9Ik0wIDM5LjVoNDBWMG0tMzkuNSA0MGg0MHYtNDAiIHN0cm9rZT0icmdiYSgxMjUsIDIwNywgMjU1LCAwLjA1KSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIi8+PC9zdmc+')] opacity-20 pointer-events-none"></div>
 
