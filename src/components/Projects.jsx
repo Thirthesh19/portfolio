@@ -27,6 +27,17 @@ const Projects = () => {
   const [loading, setLoading] = useState(true);
   const [selectedProject, setSelectedProject] = useState(null);
 
+  useEffect(() => {
+    if (selectedProject) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'unset';
+    }
+    return () => {
+      document.body.style.overflow = 'unset';
+    };
+  }, [selectedProject]);
+
   const { playHover, playClick } = useAudio();
 
   const categories = ['All', 'Web', 'Machine Learning', 'Security', 'GitHub'];
