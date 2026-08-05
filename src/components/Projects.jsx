@@ -101,11 +101,11 @@ const Projects = () => {
   useEffect(() => {
     const fetchGithubRepos = async () => {
       try {
-        const response = await axios.get(`https://api.github.com/users/${GITHUB_USERNAME}/repos?sort=updated&per_page=10`);
+        const response = await axios.get(`https://api.github.com/users/${GITHUB_USERNAME}/repos?sort=updated&per_page=30`);
         const githubProjects = response.data
           .filter(repo => !repo.archived) // Filter out archived repos
           .filter(repo => !staticProjects.some(sp => sp.github === repo.html_url)) // Prevent duplicates
-          .slice(0, 6) // Take only the top 6 after filtering
+          .slice(0, 12) // Take up to 12 after filtering
           .map(repo => ({
             id: repo.id,
             name: repo.name,
